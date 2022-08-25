@@ -1,10 +1,15 @@
 let studentRecords = [{ name: 'John', id: 123, marks: 98 }, { name: 'Baba', id: 101, marks: 23 }, { name: 'yaga', id: 200, marks: 45 }, { name: 'Wick', id: 115, marks: 75 }];
 // Ques 1 : We are interested in retrieving only the name of the students and all the names should be in caps.['JOHN', 'BABA', 'YAGA', 'WICK']
-console.log(studentRecords[0].name.toUpperCase());
-console.log(studentRecords[1].name.toUpperCase());
-console.log(studentRecords[2].name.toUpperCase());
-console.log(studentRecords[3].name.toUpperCase());
-
+let array1=[]
+let n=studentRecords.length
+for(let i=0;i<n;i++){
+    array1.push(studentRecords[i].name)
+}
+console.log(array1);
+const upper=array1.map(element=>){
+    returnelement.touppercase();
+};
+console.log(upper);
 //Ques 2: Suppose we have the same dataset as above but this time we want to get the details of // students who scored more than 50 marks. // [{name: 'John', id: 123, marks : 98 },{name: 'Wick', id: 115, marks : 75 }]
 
 let data = [];
